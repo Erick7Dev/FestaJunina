@@ -51,7 +51,7 @@ export default function AlunoConsulta() {
                     keyExtractor={({ idAluno }, index) => idAluno}
                     renderItem={({ item }) => (
                       <Text style={style.texto}>
-                        {item.idAluno}-{item.nomeAluno}, {item.turma}, {item.data}
+                        {item.idAluno}-{item.nomeAluno}
                       </Text>
                     )}
                   />

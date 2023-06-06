@@ -51,7 +51,7 @@ export default function Alunos() {
                   keyExtractor={({ idConvidado }, index) => idConvidado}
                   renderItem={({ item }) => (
                     <Text style={style.texto}>
-                      {item.idConvidado}-{item.nomeConvidado}, {item.data}
+                      {item.idConvidado}
                     </Text>
                   )}
                 />

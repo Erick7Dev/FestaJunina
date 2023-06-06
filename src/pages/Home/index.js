@@ -10,16 +10,16 @@ export default function Home() {
   function select(num) {
     switch (num) {
       case 0:
-        navigation.navigate("Alunos");
+        navigation.navigate("Aluno");
         break;
       case 1:
-        navigation.navigate("Professores");
+        navigation.navigate("Professor");
         break;
       case 2:
-        navigation.navigate("Convidados");
+        navigation.navigate("Convidado");
         break;
       case 3:
-        navigation.navigate("Devs");
+        navigation.navigate("Dev");
         break;
       case 4:
         navigation.navigate("Tutor");
@@ -29,6 +29,7 @@ export default function Home() {
   return (
     <ImageBackground source={require("../../../assets/fundoHome.jpg")} resizeMode="cover" style={{height:"100%"}}>
       <View style={style.container}>
+      <View style={style.spacer}></View>
         <TouchableOpacity onPress={() => select(0)} style={style.btn}>
           <Image style={style.imgBtn} source={require("../../../assets/alunos.jpg")}></Image>
           <View style={style.btnArea}>

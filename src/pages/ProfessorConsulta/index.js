@@ -51,7 +51,7 @@ export default function Alunos() {
                   keyExtractor={({ idProfessor }, index) => idProfessor}
                   renderItem={({ item }) => (
                     <Text style={style.texto}>
-                      {item.idProfessor}-{item.nomeProfessor}, {item.data}
+                      {item.idProfessor}-{item.nomeProfessor}
                     </Text>
                   )}
                 />
