@@ -15,6 +15,7 @@ import ConvidadoCadastro from './src/pages/ConvidadoCadastro';
 import AlunoPesquisa from './src/pages/AlunoPesquisa';
 import ProfessorPesquisa from './src/pages/ProfessorPesquisa';
 import ConvidadoPesquisa from './src/pages/ConvidadoPesquisa';
+import Tutor from './src/pages/Tutor';
 
 const Stack = createNativeStackNavigator ();
 
@@ -35,6 +36,7 @@ export default function App() {
           <Stack.Screen name="ConvidadoCadastro" component={ConvidadoCadastro} options={{title: "Cadastro de convidados"}}/>
           <Stack.Screen name="ConvidadoConsulta" component={ConvidadoConsulta} options={{title: "Consulta de convidados"}}/>
           <Stack.Screen name="ConvidadoPesquisa" component={ConvidadoPesquisa} options={{title: "Pesquisa de convidados"}}/>
+          <Stack.Screen name="Tutor" component={Tutor} options={{title: "Tutor"}}/>
         </Stack.Navigator>
       </NavigationContainer>
   );
