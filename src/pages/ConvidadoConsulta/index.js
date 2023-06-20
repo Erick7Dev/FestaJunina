@@ -8,15 +8,13 @@ import {
 import React, { useState, useEffect } from "react";
 import style from "./style.js";
 
-export default function Alunos() {
+export default function ConvidadoConsulta() {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
 
   const getConvidados = async () => {
     try {
-      const response = await fetch(
-        "http://localhost:8080/projeto-evento/convidado-json.php"
-      );
+      const response = await fetch("https://www.etecguaianazes.com.br/projeto-evento/convidado-json.php");
       const json = await response.json();
       setData(json.convidado);
     } catch (error) {

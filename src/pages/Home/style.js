@@ -9,9 +9,10 @@ export default StyleSheet.create({
     btn:{
         backgroundColor:"#FFFFFF",
         width:"75%",
-        borderRadius:"15px",
-        marginTop:"20px",
-        height:"21%"
+        borderRadius:15,
+        marginTop:20,
+        height:"21%",
+        borderRadius: 15
     },
     btnRow:{ 
         flex: 1, 
@@ -22,17 +23,18 @@ export default StyleSheet.create({
         margin: 30 
     },
     btnHori: {
-        width: 150,
-        height: 150,
+        width: "42%",
+        height: "100%",
         borderWidth: 2,
         borderRadius: 4,
         margin: 15,
-        backgroundColor: "black"
+        backgroundColor: "black",
+        borderRadius:15
     },
     imgBtn:{
         height:"100%",
         width:"100%",
-        borderRadius:"15px",
+        borderRadius: 15
     },
     btnArea: {
         flex: 1,
@@ -43,21 +45,17 @@ export default StyleSheet.create({
         color: '#fff',
         fontSize: 18,
         fontWeight: 'bold',
-        marginRight:"15px",
-        marginBottom:"15px",
+        marginRight:15,
+        marginBottom:15,
     },
     btnTextoDev: {
-        color: '#fff',
+        color: '#000',
         fontSize: 15,
         fontWeight: 'bold',
-        marginRight:"15px",
-        marginBottom:"15px",
+        marginRight:15,
+        marginBottom:15,
     },
     spacer:{
-        marginBottom:"20px"
-    },
-    imgAnimal: {
-        width: "90%",
-        height: "90%"
+        marginBottom:20
     },
 })

@@ -10,14 +10,14 @@ export default StyleSheet.create({
     animalBtn:{
         backgroundColor:"#FFFFFF",
         width:"75%",
-        borderRadius:"15px",
-        marginTop:"20px",
+        borderRadius:15,
+        marginTop:20,
         flex:1
     },
     imgBtn:{
         height:"100%",
         width:"100%",
-        borderRadius:"15px",
+        borderRadius:15,
         resizeMode:"stretch"
     },
     btnArea: {
@@ -29,8 +29,8 @@ export default StyleSheet.create({
         color: 'white',
         fontSize: 18,
         fontWeight: 'bold',
-        marginRight:"15px",
-        marginBottom:"2px"
+        marginRight:15,
+        marginBottom:2
     },
     imgRecipe: {
         width: "90%",
@@ -67,7 +67,7 @@ export default StyleSheet.create({
         margin: 10
     },
     fundoTexto:{
-        maxHeight:'60%',
+        maxHeight:'50vh',
         flex:1
     }
 })

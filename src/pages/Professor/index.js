@@ -10,13 +10,13 @@ export default function Professor() {
   function select(num) {
     switch (num) {
       case 0:
-        navigation.navigate("#");
+        navigation.navigate("ProfessorCadastro");
         break;
       case 1:
         navigation.navigate("ProfessorConsulta");
         break;
       case 2:
-        navigation.navigate("#");
+        navigation.navigate("ProfessorPesquisa");
         break;
     }
   }
@@ -25,21 +25,21 @@ export default function Professor() {
     <ImageBackground source={require("../../../assets/fundoHome.jpg")} resizeMode="cover" style={{height:"100%"}}>
       <View style={style.container}>
         <TouchableOpacity onPress={() => select(0)} style={style.btn}>
-          <Image style={style.imgBtn} source={require("../../../assets/alunos.jpg")}></Image>
+          <Image style={style.imgBtn} source={require("../../../assets/cadastro.jpeg")}></Image>
           <View style={style.btnArea}>
-            <Text style={style.btnTexto}>Alunos</Text>
+            <Text style={style.btnTexto}>Cadastro</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => select(1)} style={style.btn}>
-          <Image style={style.imgBtn} source={require("../../../assets/professores.jpg")}></Image>
+        <TouchableOpacity onPress={() => select(1)} style={style.btnConsulta}>
+          <Image style={style.imgBtn} source={require("../../../assets/consulta.jpeg")}></Image>
           <View style={style.btnArea}>
-            <Text style={style.btnTexto}>Consulta</Text>
+            <Text style={style.btnTextoB}>Consulta</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => select(2)} style={style.btn}>
-          <Image style={style.imgBtn} source={require("../../../assets/convidados.jpg")}></Image>
+        <TouchableOpacity onPress={() => select(2)} style={style.btnPesquisa}>
+          <Image style={style.imgBtn} source={require("../../../assets/pesquisa.jpeg")}></Image>
           <View style={style.btnArea}>
-            <Text style={style.btnTexto}>Convidados</Text>
+            <Text style={style.btnTextoB}>Pesquisa</Text>
           </View>
         </TouchableOpacity>
         <View style={style.spacer}></View>

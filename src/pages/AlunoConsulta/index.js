@@ -14,9 +14,7 @@ export default function AlunoConsulta() {
 
   const getAlunos = async () => {
     try {
-      const response = await fetch(
-        "http://localhost:8080/projeto-evento/aluno-json.php"
-      );
+      const response = await fetch("https://www.etecguaianazes.com.br/projeto-evento/aluno-json.php");
       const json = await response.json();
       setData(json.aluno);
     } catch (error) {

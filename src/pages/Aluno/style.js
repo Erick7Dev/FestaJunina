@@ -4,19 +4,33 @@ export default StyleSheet.create({
     container:{
         alignItems:"center",
         justifyContent: 'center',
-        height:"100%"
+        height:"100%",
     },
     btn:{
-        backgroundColor:"#FFFFFF",
+        backgroundColor:"#000000",
         width:"75%",
-        borderRadius:"15px",
-        marginTop:"20px",
-        height:"21%"
+        borderRadius:15,
+        marginTop:20,
+        height:"21%",
+    },
+    btnConsulta:{
+        backgroundColor:"#000000",
+        width:"75%",
+        borderRadius:15,
+        marginTop:20,
+        height:"21%",
+    },
+    btnPesquisa:{
+        backgroundColor:"#000000",
+        width:"75%",
+        borderRadius:15,
+        marginTop:20,
+        height:"21%",
     },
     imgBtn:{
         height:"100%",
         width:"100%",
-        borderRadius:"15px",
+        borderRadius:15,
     },
     btnArea: {
         flex: 1,
@@ -27,14 +41,17 @@ export default StyleSheet.create({
         color: '#fff',
         fontSize: 18,
         fontWeight: 'bold',
-        marginRight:"15px",
-        marginBottom:"15px",
+        marginRight:15,
+        marginBottom:5,
+    },
+    btnTextoB: {
+        color: '#000',
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginRight:15,
+        marginBottom:5,
     },
     spacer:{
-        marginBottom:"20px"
-    },
-    imgAnimal: {
-        width: "90%",
-        height: "90%"
+        marginBottom:20
     },
 })

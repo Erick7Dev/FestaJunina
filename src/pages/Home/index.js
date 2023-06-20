@@ -27,9 +27,9 @@ export default function Home() {
   }
 
   return (
-    <ImageBackground source={require("../../../assets/fundoHome.jpg")} resizeMode="cover" style={{height:"100%"}}>
+    <ImageBackground source={require("../../../assets/fundoHome.jpg")} resizeMode="cover" style={{ height: "100%" }}>
       <View style={style.container}>
-      <View style={style.spacer}></View>
+        <View style={style.spacer}></View>
         <TouchableOpacity onPress={() => select(0)} style={style.btn}>
           <Image style={style.imgBtn} source={require("../../../assets/alunos.jpg")}></Image>
           <View style={style.btnArea}>
@@ -49,17 +49,19 @@ export default function Home() {
           </View>
         </TouchableOpacity>
         <View style={style.btnRow}>
-        <TouchableOpacity style={style.btnHori} onPress={() => select(3)}>
-          <View style={style.btnArea}>
-            <Text style={ style.btnTextoDev}>Desenvolvedores</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity style={style.btnHori} onPress={() => select(4)}>
-          <View style={style.btnArea}>
-            <Text style={style.btnTexto}>Tutores</Text>
-          </View>
-        </TouchableOpacity>
-      </View>
+          <TouchableOpacity style={style.btnHori} onPress={() => select(3)}>
+          <Image style={style.imgBtn} source={require("../../../assets/devs.jpeg")}></Image>
+            <View style={style.btnArea}>
+              <Text style={style.btnTextoDev}>Desenvolvedores</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity style={style.btnHori} onPress={() => select(4)}>
+          <Image style={style.imgBtn} source={require("../../../assets/tutor.jpeg")}></Image>
+            <View style={style.btnArea}>
+              <Text style={style.btnTextoDev}>Tutores</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
         <View style={style.spacer}></View>
       </View>
     </ImageBackground>
